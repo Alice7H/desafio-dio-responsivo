@@ -1,0 +1,208 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #23272A;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+header .container{
+  background: url('../images/header-background.png') no-repeat center;
+  background-size: cover;
+  padding: 69px 24px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.container h2 {
+  font-family: 'Luckiest Guy';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 50%;
+}
+.container p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+button {
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+  border: none;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+button:hover {
+  color: #FFFFFF;
+  background-color: #00000090;
+}
+.btn2 {
+  color: #FFFFFF;
+  background-color: #23272A;
+}
+.section1,
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px;
+}
+.section2,
+.section4 {
+  background-color: #F6F6F6;
+}
+.section1-img { background: url('../images/section1.png'); }
+.section2-img { background: url('../images/section2.png'); }
+.section3-img { background: url('../images/section3.png'); }
+.section4-img { background: url('../images/section4.png'); }
+
+.section1-img,
+.section2-img,
+.section3-img,
+.section4-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 252px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.text-container h2 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.text-container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #23272A;
+}
+.section4 h2 {
+  font-family: 'Luckiest Guy';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+}
+footer {
+  background-color: #23272A;
+  height: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  height: 45px;
+  width: 162px;
+}
+@media screen and (min-width: 1024px) {
+  header .container {
+    background: url('../images/desktop/header-background.png') no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 94px 261px;
+    height: 270px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  button {
+    padding: 15px 24px;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    text-align: center;
+    gap: 27px;
+    padding: 40px 154px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header .container {
+    background: url('../images/desktop/header-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 94px 261px;
+    height: 270px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .container h2 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .section1-img { background: url('../images/desktop/section1.png'); }
+  .section2-img { background: url('../images/desktop/section2.png'); }
+  .section3-img { background: url('../images/desktop/section3.png'); }
+  .section4-img { background: url('../images/desktop/section4.png'); }
+
+  .section1-img,
+  .section2-img,
+  .section3-img,
+  .section4-img {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 394px;
+    width: 100%;
+    min-width: 607px;
+  }
+  .text-container {
+    gap: 16px;
+  }
+  .text-container h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .section2 {
+    flex-direction: row-reverse;
+  }
+  .section4 {
+    align-items: center;
+    gap: 16px;
+    padding: 40px 239px;
+  }
+  .section4 h2 {
+    line-height: 40px;
+  }
+}
